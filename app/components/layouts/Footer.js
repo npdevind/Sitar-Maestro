@@ -16,8 +16,8 @@ const Footer = () => {
     <>
       <footer className="bg-gray-950 text-white py-8 px-4 md:px-6">
         <div className="md:py-10 px-10 md:px-10 max-md:mb-5">
-          <div className="grid md:grid-cols-2 gap-28">
-            <div className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-28 ">
+            <div className="space-y-6 md:px-24">
               <div>
                 <h2 className="text-3xl font-bold">Get in touch</h2>
                 <p className="text-gray-500 dark:text-gray-400">
@@ -57,7 +57,7 @@ const Footer = () => {
                 </Button>
               </form>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-4  md:px-24">
               <div>
                 <h2 className="text-3xl font-bold">Contact Information</h2>
                 <p className="text-gray-500 dark:text-gray-400">

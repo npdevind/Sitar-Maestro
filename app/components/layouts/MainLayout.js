@@ -80,7 +80,7 @@ const MainLayout = () => {
                 width={450}
                 height={450}
                 alt="Sitar"
-                className="max-w-[300px] md:max-w-full"
+                className="max-w-[300px] md:max-w-full  animate-slide-in-right-to-left "
               />
             </div>
           </div>
@@ -94,7 +94,7 @@ const MainLayout = () => {
                 width={500}
                 height={500}
                 alt="Sitar Teacher"
-                className="rounded-xl"
+                className="rounded-xl animate-slide-in"
               />
             </div>
             <div className="space-y-4">
