@@ -212,36 +212,34 @@ const MainLayout = () => {
                 <CarouselContent>
                   {imageArray.map((item, index) => {
                     return (
-                      <>
-                        <CarouselItem
-                          key={index}
-                          className="md:basis-1/2 lg:basis-1/2"
-                        >
-                          <Card className="bg-gray-950 text-white p-6">
-                            <CardContent>
-                              <div className="flex items-center gap-4 mb-4">
-                                <Image
-                                  src={item.photo}
-                                  alt=""
-                                  className="rounded-full h-10 w-10"
-                                />
-                                <div>
-                                  <h3 className="font-semibold">{item.name}</h3>
-                                  <p className="text-gray-400">
-                                    {item.stdType} Student
-                                  </p>
-                                </div>
+                      <CarouselItem
+                        className="md:basis-1/2 lg:basis-1/2"
+                        key={index}
+                      >
+                        <Card className="bg-gray-950 text-white p-6">
+                          <CardContent>
+                            <div className="flex items-center gap-4 mb-4">
+                              <Image
+                                src={item.photo}
+                                alt=""
+                                className="rounded-full h-10 w-10"
+                              />
+                              <div>
+                                <h3 className="font-semibold">{item.name}</h3>
+                                <p className="text-gray-400">
+                                  {item.stdType} Student
+                                </p>
                               </div>
-                              <p className="text-gray-400">
-                                Learning the sitar with this teacher has been
-                                a\n life-changing experience. His patience,
-                                expertise, and\n passion for the instrument have
-                                truly inspired me.
-                              </p>
-                            </CardContent>
-                          </Card>
-                        </CarouselItem>
-                      </>
+                            </div>
+                            <p className="text-gray-400">
+                              Learning the sitar with this teacher has been a\n
+                              life-changing experience. His patience, expertise,
+                              and\n passion for the instrument have truly
+                              inspired me.
+                            </p>
+                          </CardContent>
+                        </Card>
+                      </CarouselItem>
                     );
                   })}
                 </CarouselContent>
@@ -287,7 +285,7 @@ const MainLayout = () => {
       </main>
 
       <footer className="bg-gray-950 text-white py-8 px-4 md:px-6" ref={ref}>
-        <div className="md:py-20 px-10 md:px-20 max-md:mb-5">
+        <div className="md:py-10 px-10 md:px-10 max-md:mb-5">
           <div className="grid md:grid-cols-2 gap-28">
             <div className="space-y-6">
               <div>
