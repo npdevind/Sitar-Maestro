@@ -1,14 +1,17 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { CiMenuBurger } from "react-icons/ci";
 import { GiGuitarHead } from "react-icons/gi";
 
 const NavBar = ({ handleClick }) => {
+  const pathName = usePathname();
   return (
     <header className="flex items-center justify-between h-16 px-4 md:px-6 bg-white dark:bg-gray-950 shadow">
       <Link
-        href="#"
+        href="/"
         className="flex items-center gap-2 text-lg font-semibold"
         prefetch={false}
       >
@@ -40,7 +43,7 @@ const NavBar = ({ handleClick }) => {
           Services
         </Link>
         <Link
-          href="#"
+          href="/gallery"
           className="text-gray-900 hover:text-gray-700 dark:text-gray-50 dark:hover:text-gray-300"
           prefetch={false}
         >
